@@ -164,7 +164,10 @@ class Graph2:
 
 #Adjacency list, undirected, unweighted
 #class Graph3:
-
+class Graph3:
+    def __init__(self, n, adj):
+        self.n = n 
+        self.adj = adj
 
 
 
@@ -173,7 +176,10 @@ class Graph2:
 
 #Adjacency list, directed, weighted
 #class Graph4:
-
+class Graph4:
+    def __init__(self, n, adj):
+        self.n = n 
+        self.adj = adj
 
 
 
@@ -184,7 +190,6 @@ class Graph5:
     def __init__(self, n, adj):   
         self.adj = adj
         self.ans = [[float("inf") for _ in range(n)] for _ in range(n)]
-        self.floyd_warshall()
 
     #Floyd Warshall
     def floyd_warshall(self):
